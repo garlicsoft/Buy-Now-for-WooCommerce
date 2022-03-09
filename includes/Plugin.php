@@ -146,7 +146,7 @@ class Plugin {
 	 */
 	public function woocommerce_is_checkout( $is_checkout ) {
 		if ( is_product() ) {
-			return true;
+			return false;
 		}
 
 		return $is_checkout;
